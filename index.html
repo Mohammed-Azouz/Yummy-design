@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <div id="loading">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
+    </div>
+    <div class="nav-side d-flex ">
+        <div class="nav-links  d-flex flex-column justify-content-between ">
+            <div class="allLinks mt-4 p-4 d-flex flex-column text-capitalize">
+                <a  class="my-2 links" href="#" data-text="search">search</a>
+                <a  class="my-2 links" href="#" data-text="category">categories</a>
+                <a  class="my-2 links" href="#" data-text="area">area</a>
+                <a  class="my-2 links" href="#" data-text="ingredient">Ingredients</a>
+                <a  class="my-2 links" href="#" data-text="contact">contact us</a>
+            </div>
+            <div class="nav-icons p-4">
+                <span class="bg-light p-2 ms-1 rounded-1 text-center"><i class=" fa-brands fa-facebook-f"></i> </span>
+                <span class="bg-light p-2 ms-2 rounded-1 text-center"><i class=" fa-brands fa-twitter"></i></span>
+                <span class="bg-light p-2 ms-1 rounded-1 text-center"><i class=" fa-solid fa-globe"></i></span>
+                <div class="copyright pt-2 text-secondary">
+                    <p class="wow animate__bounceInUp">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="nav-header px-3 bg-white">
+            <div class="logo">
+                <img src="./logo.png" class="w-100" alt="">
+            </div>
+            <div class="open-icon">
+                <i id="openNav" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="an-icons text-center">
+                <i class="p-1 fa-solid fa-globe"></i>
+                <i class="p-1 fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+     <div id="SearchInputs" class="container py-3">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-5">
+                <input id="searchName" placeholder="Search By Name" type="search" class="search text-light form-control">
+            </div>
+            <div class="col-md-5">
+                <input id="searchFirst" placeholder="Search By Frist Letter" type="search" class="search text-light form-control">
+            </div>
+        </div>
+    </div>
+
+    <section id="home">
+
+       
+
+        <div class="container py-5">
+            <div id="meals" class="row g-4">
+
+            </div>
+        </div>
+    </section>
+    <section id="detailsPage">
+        <div class="container py-5 text-white">
+            <div id="detailsContent" class="row">
+                
+            </div>
+        </div>
+    </section>
+    <section id="groubForm">
+        <div class="container">
+            <div class="row vh-100 d-flex flex-wrap align-content-center justify-content-center">
+                <div class="col-md-4">
+                    <input id="name" type="text" name="Name" class="form-control mt-3" placeholder="Enter Your Name">
+                    <div id="messegeNameWarring" class="bg-warning m-2 p-2 rounded-3 text-center text-dark fs-5 fw-bolder fst-italic"><p>Special characters and numbers not allowed</p></div>
+                    <input id="phone" type="number" name="Phone" class="form-control mt-3" placeholder="Enter Your phone">
+                    <div id="messegePhoneWarring" class="bg-warning m-2 p-2 rounded-3 text-center text-dark fs-5 fw-bolder fst-italic"><p>Enter valid Phone Number</p></div>
+                    <input id="password" type="password" name="password" class="form-control mt-3" placeholder="Enter Your password">
+                    <div id="messegePassWarring" class="bg-warning m-2 p-2 rounded-3 text-center text-dark fs-5 fw-bolder fst-italic"><p>Enter valid password *Minimum eight characters, at least one letter and one number:*</p></div>
+
+                </div>
+                <div class="col-md-4">
+                    <input id="email" type="email" name="Email" class="form-control mt-3" placeholder="Enter Your Email">
+                    <div id="messegeEmailWarring" class="bg-warning m-2 p-2 rounded-3 text-center text-dark fs-5 fw-bolder fst-italic"><p>Email not valid *exemple@yyy.zzz</p></div>
+                    <input id="age" type="number" name="Age" class="form-control mt-3" placeholder="Enter Your Age">
+                    <div id="messegeAgeWarring" class="bg-warning m-2 p-2 rounded-3 text-center text-dark fs-5 fw-bolder fst-italic"><p>Enter valid age</p></div>
+                    <input id="rePassword" type="password" name="Repassword" class="form-control mt-3" placeholder="Repassword">
+                    <div id="messegeRepasWarring" class="bg-warning m-2 p-2 rounded-3 text-center text-dark fs-5 fw-bolder fst-italic"><p>Enter valid repassword</p></div>
+                </div>
+                <div class="submitt text-center mt-4">
+                    <button id="formBtn" class="btn btn-outline-danger">submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
